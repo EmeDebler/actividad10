@@ -50,6 +50,3 @@ img {
     -o-filter:      grayscale(100%);
     filter: gray; 
 }
-
-img:hover {
-    filter: none;

@@ -18,7 +18,7 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
   	<div id="photos">
   		<ul id="photo-gallery">
   			<li>
-  				<img src="img/img1.jpg">
+  				<span class="foto1"><img src="img/img1.jpg"></span>
   			</li>
   			<li>
   			    <img src="img/img2.jpg">
@@ -40,6 +40,9 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
 
+    $("ul").on("click", function(){
+       $("img").css({"filter" : "none", "transition" : "2s" })
+     });
 
 </script>
 
