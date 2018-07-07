@@ -1,0 +1,42 @@
+<!-- En una página con muchas imágenes mostrar una alerta cuando esté
+cargado el DOM y otra después que las imágenes se hayan cargado.
+
+Tip: Investigar el evento window.onload
+<!DOCTYPE html>
+
+-->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  	<img src="img/img1.jpg" alt="">
+  	<img src="img/img2.jpg" alt="">
+  	<img src="img/img3.jpg" alt="">
+  	<img src="img/img4.jpg" alt="">
+  	<img src="img/img5.jpg" alt="">
+  	<img src="img/img6.jpg" alt="">
+  	<img src="img/img7.jpg" alt="">
+  	<img src="img/img8.jpg" alt="">
+  	<img src="img/img9.jpg" alt="">
+  	
+ <!--Jquery-3.3.1-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script>
+  $(document).ready(function(){
+
+   alert("Dom cargado");
+   console.log("Dom cargado");
+   });
+   function load(){
+  
+   alert("Dom está cargando sus recursos")
+   console.log("Dom con sus recursos cargados");
+   }
+   window.onload = load;
+  </script>
+
+  </body>
+</html>
